@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marina A. Castro</title>
     <!-- stlyles -->
-    <link rel="stylesheet" href="./css/stylePrueba1.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="media.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="reset.css"/> -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- icons -->
     <script src="https://kit.fontawesome.com/7a071f8154.js" crossorigin="anonymous"></script>
@@ -46,7 +48,7 @@
                 <div class="greeting greeting-hello">
                     <div class="hello-text">
                         <p class="hello">¡Hola! Soy</p>
-                        <h1 class="name">Marina A. Castro</h1>
+                        <h1>Marina A. Castro</h1>
                         <p class="about">Desarrolladora Frontend, artista plástica, apasionada por los idiomas y curiosa por naturaleza</p>
                         <div class="btn">
                             <button class="hello-button"><a href="#myproyects">
@@ -64,29 +66,29 @@
         <section id="skills"> 
             <div class="skills-container">
                 <h2>Mis Conocimientos</h2> 
-                <p class="description-skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit neque earum eius minima iusto voluptatum nemo architecto illo enim.</p>
+                <p class="description-skills description-proyects">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit neque earum eius minima iusto voluptatum nemo architecto illo enim.</p>
                 <div class="skills-cards">
-                    <div class="sk-card">
+                    <div class="sk-card sk-py">
                         <i class="sk-icons fab fa-html5 card-sk-icon"></i>
                         <p class="sk-name">HTML 5</p>
                     </div>
-                    <div class="sk-card">
+                    <div class="sk-card sk-py">
                         <i class="sk-icons fab fa-css3 card-sk-icon"></i>
                         <p class="sk-name">CSS 3</p> 
                     </div>
-                    <div class="sk-card">
+                    <div class="sk-card sk-py">
                         <i class="sk-icons fab fa-html5 card-sk-icon"></i>
                         <p class="sk-name">HTML 5</p>
                     </div>
-                    <div class="sk-card">
+                    <div class="sk-card sk-py">
                         <i class="sk-icons fab fa-js-square card-sk-icon"></i>
                         <p class="sk-name">JavaScript</p> 
                     </div>
-                    <div class="sk-card">
+                    <div class="sk-card sk-py">
                         <i class="sk-icons fab fa-react card-sk-icon"></i>
                         <p class="sk-name">React</p> 
                     </div>
-                    <div class="sk-card">
+                    <div class="sk-card sk-py">
                         <i class="sk-icons fab fa-git-alt card-sk-icon"></i>
                         <p class="sk-name">GIT</p> 
                     </div>
@@ -97,8 +99,8 @@
         <section id="container-quote">
             <div class="qt-container">
                 <i class="fas fa-quote-right"></i>
-                <blockquote class="bq-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, neque ea? Animi, officia! Natus, consequatur vel dolore qui ullam a in nemo. Animi debitis enim nemo, dolores id quisquam minus quis? Nihil consequatur explicabo eius nemo, tempore quas? Iusto quos laudantium veritatis ducimus unde, asperiores quibusdam esse ullam odio itaque!</blockquote>
-                <p class="bq-author">Someone</p>
+                <blockquote class="bq-text">Cuando se nace pobre, estudiar es el mayor acto de rebeldía contra el sistema. El saber rompe las cadenas de la esclavitud.</blockquote>
+                <p class="bq-author">Tomás Bullat</p>
             </div> 
         </section>
     <!--Fin de sección quote-->
@@ -108,37 +110,49 @@
             <div class="proyects-container">
                 <h2>Mis Proyectos</h2>
                 <p class="description-proyects">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit neque earum eius minima iusto voluptatum nemo architecto illo enim.</p>
-                <div class="proyects-cards">
-                    <div class="mp-card p30 m10">
-                    <!-- <a class="mp-a" href="#greeting"> -->
-                        <img class="mp-img" src="/img/meetings.png" alt="Portfolio">
-                        <p class="sk-name">Portfolio</p>
-                    </a>    
+                <div class="proyects-cards skills-cards">
+                    <a href="#greeting">
+                    <div class="mp-card sk-py">
+                        <img class="mp-img" src="./img/meetings.png" alt="Portfolio">
+                        <p class="sk-name">Portfolio</p>       
                     </div>
-                    <div class="mp-card p30 m10">
-                        <img class="mp-img" src="/img/meetings.png" alt="Generador de memes">
+                    </a> 
+                    <a href="#greeting">
+                    <div class="mp-card sk-py">
+                        <img class="mp-img" src="./img/meetings.png" alt="Generador de memes">
                         <p class="sk-name">Generador de memes</p>
                     </div>
-                    <div class="mp-card p30 m10">
-                        <img class="mp-img" src="/img/meetings.png" alt="Match3">
+                    </a>
+                    <a href="#greeting">
+                    <div class="mp-card sk-py">
+                        <img class="mp-img" src="./img/meetings.png" alt="Match3">
                         <p class="sk-name">Match 3</p>
                     </div>
-                    <div class="mp-card p30 m10">
+                    </a>
+                    <a href="#greeting">
+                    <div class="mp-card sk-py">
                         <img class="mp-img" src="./img/meetings.png" alt="Controlador de Gastos">
                         <p class="sk-name">Controlador de gastos</p>
                     </div>
-                    <div class="mp-card p30 m10">
-                        <img class="mp-img" src="/img/meetings.png">
+                    </a>
+                    <a href="#greeting">
+                    <div class="mp-card sk-py">
+                        <img class="mp-img" src="./img/meetings.png" >
                         <p class="sk-name">Administrador de reuniones</p>
                     </div>
-                    <div class="mp-card">
-                        <img class="mp-img" src="/img/meetings.png" alt="Todo App">
+                    </a>
+                    <a href="#greeting">
+                    <div class="mp-card sk-py">
+                        <img class="mp-img" src="./img/meetings.png" alt="Todo App">
                         <p class="sk-name">Todo app</p>
                     </div>
-                    <div class="mp-card">
-                        <img class="mp-img" src="/img/meetings.png" alt="Buscador de Películas">
+                    </a>
+                    <a href="#greeting">
+                    <div class="mp-card card-self sk-py">
+                        <img class="mp-img" src="./img/meetings.png"  alt="Buscador de Películas">
                         <p class="sk-name">Buscador de películas</p>
                     </div>
+                    </a>
                 </div>    
             </div>
         </section>
@@ -187,7 +201,7 @@
                                             <input class="input" type="text" name="nombre" placeholder="Ingresa tu nombre/s"/>
                                         </label>
                                     </div>
-                                    <div class="lastname">
+                                    <div class="name-last-container">
                                         <!-- Tipo de input y label actual -->
                                         <label>
                                             Apellido *
@@ -264,6 +278,7 @@
             </li>
         </ul> 
         <p class="p-footer">Hecho  con mucho 💖☕🍕🍨 por MAC</p>
+        <p class="p-footer">All Rights Reserved ® 2022</p>
     <!--Fin de links redes sociales -->
     </footer>
     <!-- Fin de footer -->
