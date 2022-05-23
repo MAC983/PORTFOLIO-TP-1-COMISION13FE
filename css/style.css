@@ -4,19 +4,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    font-size: 14px;
 }
 
  /* etiquetas */
 
-body {
+html, body{
     width: 100vw;
     height: 100vh;
-    font-size: 16px;
-    overflow-x: hidden;
-}    
+    scroll-behavior: smooth;
+    /* border: 5px solid rgb(116, 7, 116); */
+    overflow-x:hidden;
+}
+
+/* body {
+    box-shadow:-10px 0 6px 0 rgba(128, 42, 80, 0.9)inset;
+}  */
 
 header {
     top: 0;
+    /* right: 0;
+    left: 0; */
+    box-shadow: 0px 18px 30px 10px rgba(214,22,104,0.64);
     width: 100%;
     padding: 1.5rem 0;
     display: flex;
@@ -26,6 +35,7 @@ header {
     position: fixed;
     text-decoration: none;
     overflow-x: hidden;
+    z-index:2;
 }
 
 
@@ -59,8 +69,7 @@ p {
 
 footer {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow:column wrap;
     width: 100%;
     bottom: 0;
     padding: 4rem 1.25rem 3.75rem;
@@ -97,20 +106,21 @@ a {
 }
 
 label{
-    margin: 0.63rem 24rem;
-    display: block;
+    margin: 1rem;
+    display: flex;
     flex-direction: column;
     font-weight: 500;
     font-size: bold;
     text-align: left;
     line-height: 1.2em;
+    width: inherit;
 }
 
  /* id´s */
 
 #greeting {
     padding: 4rem 2rem;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     /* flex-direction: row; */
     justify-content: center;
@@ -194,9 +204,9 @@ label{
     color:rgb(128, 42, 80);
 }
 
-.nav-menu-responsive {
+/* .nav-menu-responsive {
     display: none;
-}
+} */
 
 .nav-button-header>a {
     padding: 0.63rem 1rem;
@@ -217,28 +227,46 @@ label{
     transition:0.5s;
     box-shadow: 0 0 1rem rgba(248, 98, 196);
 }
- /* Fin Section header/nav */
+
+/* Comienzo de nav-responsive */
+
+.nav-menu-responsive{
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 18rem;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    padding: 30px 0 0 20px;
+    background-color: rgb(138, 9, 71);
+    box-shadow: -0.90rem 0 12px rgb(228, 112, 187);
+    transform: translateX(100%);
+    transition: 0.2s;
+}
+/* Fin nav-responsive */
+
+/* Fin Section header/nav */
+
 
  /* inicio section #greeting */
 
 .flex-container-about-section {
     /* border: blue solid 2px; */
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     padding: 0.63rem;
     display: flex;
     align-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     line-height: 7rem;
-    
 }
 
 .greeting {
     width: 45%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content:space-evenly;
     padding: 0 1.25rem;
@@ -249,7 +277,7 @@ label{
     margin: 1em;
     display: flex;
     justify-content: flex-start;
-    /* min-width: 500px; */
+    min-width: 500px;
 }
 .hello-text {
     max-width: 450px;
@@ -308,30 +336,33 @@ label{
 }
 
 .hello-img {
+    /* display: block; */
+    position: relative;
+    z-index: 1;
     max-width: 500px;
     width: 90%;
     padding: 2rem;
     justify-content: center;
+    filter: drop-shadow(0 0 20px rgb(235, 41, 167));
 }
  /* fin section greeting */
 
  /* inicio section skills */
-
 .skills-container {
     width: 100%;
-    padding: 9rem 0 1rem;
+    padding: 11rem 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(224, 161, 210);
+    background: rgb(255, 201, 244);
 }
 
 .skills-cards {
-    max-width: 1100px;
-    display: flex;
+    max-width: 900px;
+    /* display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: center; */
 }    
 
 .sk-card {
@@ -368,17 +399,14 @@ label{
     text-align: center;
     display: block;
 }
+/* fin section skills */
 
- /* fin section skills */
-
- /* inicio de section quote */
-
+/* inicio de section quote */
 .qt-container {
     max-width: 900px;
-    display: flex;
-    flex-wrap: wrap;
     padding: 4rem 0;
-    flex-direction: inherit;
+    display: flex;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     color: rgb(255, 255, 255);
@@ -394,20 +422,20 @@ label{
 }
 
 .fa-quote-right {
-    color:white;
+    margin-bottom: 1.25rem;
     font-size: 3em;
     text-align: center;
-    margin-bottom: 1.25rem;
+    color:rgb(255, 255, 255);
 }
 
 .bq-text {
     max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    font-weight: 400;
-    justify-content: center;
     padding: 1.25rem;
     margin: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
 }
 
 .bq-text{
@@ -421,14 +449,12 @@ label{
     font-family: Alegreya, sans-serif;
     font-weight: 900;
 }
+/* fin section quote */
 
- /* fin section quote */
-
- /* Inicio section proyects */
-
+/* Inicio section proyects */
 .proyects-container {
     width: 100%;
-    padding: 9rem 0 1rem;
+    padding: 11rem 0 1rem;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -450,17 +476,20 @@ label{
     padding: 1.87rem;
 }
 
+.proyects-cards, .skills-cards {
+
+    margin: 1em 3em;
+    padding: 1.5em 3em;
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 900px; */
+    justify-content: center;
+}
+
 .proyects-cards {
     max-width: 1100px;
     justify-content:space-between;
     align-content: space-evenly;
-}
-
-.proyects-cards, .skills-cards {
-    margin: 1em 3em;
-    padding: 1.5em 3em;
-    display: flex;
-    flex-wrap: wrap; 
 }
 
 .mp-card {
@@ -500,42 +529,48 @@ label{
     height: 70%;
     object-fit: contain;
 }
-
- /* fin de section proyects */
+/* fin de section proyects */
 
  /* inicio de section contact */
  /* inicio de redes sociales */
 
 .contact-containter {
-    width: 100%;
-    max-width: 1120px;
     display: flex;
     padding: 8.75rem 3.13rem;
     align-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 .social-container {
     display: flex;
     border-radius: 15px;
-    border:2px inset  rgb(128, 42, 80);
     padding: 3em 0.6em;
     width: 100%;
-    box-shadow: 0.32rem 0.94rem 1.88rem rgb(245, 35, 172);
-    background-color:rgb(179, 79, 127)    ; 
-    text-align: center;
+    flex-wrap: wrap;
+    box-shadow: 0.32rem 0.94rem 1.88rem rgb(245 35 172);
+    background-color: rgb(179, 79, 127);
+    text-align: left;
 }
 
 .contact-links {
-    display: block;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* width: 40%; */
     margin: 0.63rem 0;
 }
 
-.p-links{
-    max-width: 350px;
+.contact-links h2{
+    padding-left: 1.25rem;
+}
+
+.p-links {
+    /* padding: 2.7rem 2.7rem 1rem 2.7rem; */
+    max-width: 21.875rem;
     text-align: center;
+    /* padding: 2.7; */
+    text-align: left;
+    padding: 1.25rem 0;
+    margin: 1.25rem;
 }
 
 .nav-links  {
@@ -616,39 +651,41 @@ input::placeholder {
 .contact-form-container {
     /* display: block; */
     margin: 1em 0;
-    width: 100%;
+    /* width: 40%; */
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+
+.contact-form-container h2{
+    padding-left: 1.25rem;
 }
 
 .input-form-container{
-    font-family:'Alegreya Sans', sans-serif;
+    /* font-family: 'Alegreya Sans', sans-serif; */
     color: rgb(77, 2, 58);
     font-size: 0.9em;
     font-weight: 500;
-    padding: 1em;
     width: 100%;
 }
 
 div.input-form-container {
-    padding: 1em;
+    display: flex;
+    flex-direction: column;
     font-family: 'Merriweather Sans', sans-serif;
-    width: 100%;
 }
 
-/* .name-last-container {  
+.name-last-container{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-} */
+    flex-direction: row;
+}
 
-.input {
+.input{
     border: 4px solid rgb(231, 86, 200);
     background-color: rgb(233, 173, 217);
     font-family:'Merriweather Sans', sans-serif;
     font-weight: normal;
     padding: 1em;
-    width: 100%;
     border-radius: 20px;
     line-height: 1.5em;
     margin: 1em 0 0.5em;
@@ -665,6 +702,7 @@ div.input-form-container {
     color: rgb(243, 189, 206);
     padding: 0.75rem  2.5rem;
     border-radius: 30px;
+    width: fit-content;
     text-decoration: none;
     font-family:Alegreya, sans-serif;
     font-size: 1em;
@@ -686,6 +724,7 @@ div.input-form-container {
 
 .nav-footer {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: row;

@@ -25,11 +25,11 @@
 
 ***
 ## SECCIONES
-✨Encabezado con Links de Navegación.<br/>
+✨Encabezado con links de navegación a las distintas secciones de la página.<br/>
 ✨Presentación<br/>
-✨Mis Conocimientos<br/>
+✨Mis Conocimientos (dirigen a la página principal de Ada Itw)<br/>
 ✨Cita<br/>
-✨Mis Proyectos.<br/>
+✨Mis Proyectos (dirigen a los distintos proyectos realizados durante la cursada).<br/>
 ✨Formulario de Contacto y Redes Sociales.<br/>
 ✨Footer con Links de Navegación y Redes Sociales.
 <br/>
