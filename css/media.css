@@ -1,5 +1,158 @@
-/* media large monitor */
+ /* @media */
 
-/* laptop, tablets */
+/* Formato celulares 480PX */
 
-/* celphones */
+@media screen and (max-width:480px){
+    header {
+        display:none;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2{
+        font-size: 1.6em;
+    }
+
+    .flex-container-about-section {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .greeting-hello {
+        margin: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 15.63rem;
+    }
+
+    .hello {
+        font-size: 2.8em;
+        font-weight: 900;
+        color: rgb(49, 44, 44);
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .hello-text {
+        max-width: 20rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .hello-img {
+        width: 70%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-footer {
+        display: none;
+    }
+
+    .ul-fab-footer {
+        padding: 1.25rem;
+    }
+
+    .proyects-cards {
+        max-width: 37rem;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .description-proyects, .description-skills {
+        padding: 1rem 2rem;
+    }
+
+    .social-container {
+        width: 80%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    } 
+
+    form {
+        width: 60%;
+    }
+
+    .name-last-container {
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+    }
+
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.63rem 0;
+    }
+
+    div.input-form-container {  
+        width: 17rem;
+    }
+}
+/* Fin de Formato Celulares */
+
+/*******************************************/
+
+/* Comienzo formato Tablets desde 481px hasta 900px */
+
+@media screen and (min-width:481px) and (max-width:1000px){
+    header{
+        display:none;
+    }
+
+    .nav-footer {
+        display: none;
+    }
+
+    .ul-fab-footer{
+        padding: 1.25rem;
+    }
+
+    .proyects-cards {
+        max-width: 47.5rem;
+        justify-content: space-between;
+        align-content:center;
+    }
+
+    .description-proyects, .description-skills{
+        padding: 1rem 2rem;
+    } 
+    
+    .social-container{
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .icons-contact-container {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1.25rem 0;
+    }
+
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.63rem 0;
+    }
+
+    li.icons-contact {
+        width: 44%;
+        height: fit-content;
+        display: flex;
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
