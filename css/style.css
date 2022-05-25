@@ -233,7 +233,7 @@ label{
     z-index: 4;
     padding: 30px 0 0 20px;
     background-color: rgb(138, 9, 71);
-    box-shadow: -0.90rem 0 12px rgb(228, 112, 187);
+    box-shadow: -0.90rem 0 12px rgba(214,22,104,0.64);
     transform: translateX(100%);
     transition: 0.2s;
 }
