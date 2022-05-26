@@ -60,6 +60,13 @@
 📌[GitHub](https://github.com/MAC983)
 
 ***
+
+## DEPLOYADO
+
+<p>Podes acceder al portfolio a través del siguiente link:</p>
+[Deploy](https://mac983.github.io/PORTFOLIO-TP-1-COMISION13FE/)
+
+***
 ## DESPEDIDA
 
 <br/>
