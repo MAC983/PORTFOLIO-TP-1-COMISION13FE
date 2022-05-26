@@ -63,7 +63,7 @@
 
 ## DEPLOYADO
 
-<p>Podes acceder al portfolio a través del siguiente link:
+<p>Podes acceder al portfolio a través del siguiente link:</br>
 [Deploy](https://mac983.github.io/PORTFOLIO-TP-1-COMISION13FE/)</p>
 
 ***
